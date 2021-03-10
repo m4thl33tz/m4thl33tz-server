@@ -3,14 +3,14 @@ DROP TABLE IF EXISTS points;
 
 CREATE TABLE users(
   id BIGINT GENERATED ALWAYS AS IDENTITY,
-  unique_id TEXT UNIQUE NOT NULL,
+  email TEXT UNIQUE NOT NULL,
   name TEXT NOT NULL,
   nickname Text
 );
 
 CREATE TABLE points(
   id BIGINT GENERATED ALWAYS AS IDENTITY,
-  player_id TEXT NOT NULL REFERENCES users (unique_id),
+  player_id TEXT NOT NULL REFERENCES users (email),
   points INTEGER NOT NULL
 );
 

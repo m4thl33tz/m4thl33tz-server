@@ -35,14 +35,14 @@ describe('m4thl33tz-server routes', () => {
     const response = await request(app)
       .post('/user/newUser')
       .send({
-        uniqueId: justin.sub,
+        email: justin.email,
         name: justin.given_name + ' ' + justin.family_name,
         nickname: justin.nickname,
       });
 
     expect(response.body).toEqual({
       id: '1',
-      uniqueId: 'google-oauth2|116678650705106025315',
+      email: 'justin.martin7x@gmail.com',
       name: 'Justin Martin',
       nickname: 'justin.martin7x',
     });

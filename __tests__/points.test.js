@@ -34,17 +34,17 @@ describe('M4thl33tz server routes for points', () => {
 
   it('should create a new points table for a new user', async () => {
     User.addNewUser({
-      uniqueId: justin.sub,
+      email: justin.email,
       name: justin.given_name + ' ' + justin.family_name,
       nickname: justin.nickname,
     });
     const response = await request(app)
       .post('/points/newPoints')
-      .send({ uniqueId: justin.sub });
+      .send({ email: justin.email });
 
     expect(response.body).toEqual({
       id: '1',
-      playerId: justin.sub,
+      playerId: justin.email,
       points: 0,
     });
   });
@@ -52,11 +52,11 @@ describe('M4thl33tz server routes for points', () => {
   it('should add points to existing points pool', async () => {
     const response = await request(app)
       .put('/points/addPoints')
-      .send({ uniqueId: justin.sub, points: 50 });
+      .send({ email: justin.email, points: 50 });
 
     expect(response.body).toEqual({
       id: '1',
-      playerId: justin.sub,
+      playerId: justin.email,
       points: 50,
     });
   });
@@ -74,7 +74,7 @@ describe('M4thl33tz server routes for points', () => {
 
   it('should return a players points but providing the uniqueId', async () => {
     const response = await request(app).get(
-      `/points/getPlayerPoints/${justin.sub}`
+      `/points/getPlayerPoints/${justin.email}`
     );
 
     expect(response.body).toEqual({
