@@ -1,0 +1,68 @@
+{
+  "easy": [
+    { 
+      "operand": "arithmetic", 
+      "operator": "addition", 
+      "difficulty": "easy" ,
+      "number": "15"
+    },
+    { 
+      "operand": "arithmetic", 
+      "operator": "multiplication", 
+      "difficulty": "easy",
+      "number": "15"
+    }
+  ],
+  "medium": [
+    {
+      "operand": "arithmetic", 
+      "operator": "addition", 
+      "difficulty": "medium" ,
+      "number": "10"
+    },
+    { 
+      "operand": "arithmetic", 
+      "operator": "multiplication", 
+      "difficulty": "easy",
+      "number": "10"
+    },
+    { 
+      "operand": "arithmetic", 
+      "operator": "subtraction", 
+      "difficulty": "medium",
+      "number": "10"
+    },
+    { 
+      "operand": "arithmetic", 
+      "operator": "division", 
+      "difficulty": "easy",
+      "number": "5"
+    }
+  ],
+  "hard": [
+    {
+      "operand": "arithmetic", 
+      "operator": "addition", 
+      "difficulty": "hard" ,
+      "number": "10"
+    },
+    { 
+      "operand": "arithmetic", 
+      "operator": "multiplication", 
+      "difficulty": "medium",
+      "number": "10"
+    },
+    { 
+      "operand": "arithmetic", 
+      "operator": "subtraction", 
+      "difficulty": "medium",
+      "number": "10"
+    },
+    { 
+      "operand": "arithmetic", 
+      "operator": "division", 
+      "difficulty": "medium",
+      "number": "10"
+    }
+  ]
+}
