@@ -1,66 +1,66 @@
 {
   "easy": [
     { 
-      "operator": "arithmetic", 
-      "operation": "addition", 
+      "operand": "arithmetic", 
+      "operator": "addition", 
       "difficulty": "easy" ,
       "number": "15"
     },
     { 
-      "operator": "arithmetic", 
-      "operation": "multiplication", 
+      "operand": "arithmetic", 
+      "operator": "multiplication", 
       "difficulty": "easy",
       "number": "15"
     }
   ],
   "medium": [
     {
-      "operator": "arithmetic", 
-      "operation": "addition", 
+      "operand": "arithmetic", 
+      "operator": "addition", 
       "difficulty": "medium" ,
       "number": "10"
     },
     { 
-      "operator": "arithmetic", 
-      "operation": "multiplication", 
+      "operand": "arithmetic", 
+      "operator": "multiplication", 
       "difficulty": "easy",
       "number": "10"
     },
     { 
-      "operator": "arithmetic", 
-      "operation": "subtraction", 
+      "operand": "arithmetic", 
+      "operator": "subtraction", 
       "difficulty": "medium",
       "number": "10"
     },
     { 
-      "operator": "arithmetic", 
-      "operation": "division", 
+      "operand": "arithmetic", 
+      "operator": "division", 
       "difficulty": "easy",
       "number": "5"
     }
   ],
   "hard": [
     {
-      "operator": "arithmetic", 
-      "operation": "addition", 
+      "operand": "arithmetic", 
+      "operator": "addition", 
       "difficulty": "hard" ,
       "number": "10"
     },
     { 
-      "operator": "arithmetic", 
-      "operation": "multiplication", 
+      "operand": "arithmetic", 
+      "operator": "multiplication", 
       "difficulty": "medium",
       "number": "10"
     },
     { 
-      "operator": "arithmetic", 
-      "operation": "subtraction", 
+      "operand": "arithmetic", 
+      "operator": "subtraction", 
       "difficulty": "medium",
       "number": "10"
     },
     { 
-      "operator": "arithmetic", 
-      "operation": "division", 
+      "operand": "arithmetic", 
+      "operator": "division", 
       "difficulty": "medium",
       "number": "10"
     }
